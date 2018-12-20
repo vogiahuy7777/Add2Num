@@ -9,6 +9,6 @@
  * @author Hy's  PC
  */
 public interface IReceiver {
-    public abstract void send(String msg);
+    public void send(String msg);
     
 }
