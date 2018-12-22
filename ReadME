@@ -3,12 +3,48 @@ BUILD OUTPUT DESCRIPTION
 ========================
 
 Hướng dẫn : 
-1. Tải phần mềm tại link : https://drive.google.com/open?id=1kY1zUF1M8q1MBW93tCKEwFOn7-ZXz7RL
+1. Tải phần mềm tại link : https://drive.google.com/open?id=1Ti1CDkLuWdclBDQp8TtwffMYTAb2RAuc
  ========================
 2. 
   * Cách sử dụng 1 chạy file Add2Number.jar:
     B1:Nhâp số thứ nhất vào ô bên cạnh chữ "Fist Number".
     B2:Nhâp số thứ hai vào ô bên cạnh chữ "Second Number"
-    B3:Nhấn vào nút com[ute để thực hiện phép toán. Kết quả và các bước thực hiện sẽ được in ra màn hình phía bên dưới
+    B3:Nhấn vào nút compute để thực hiện phép toán. Kết quả và các bước thực hiện sẽ được in ra màn hình phía bên dưới
     B4:Nhấn vào nút Reset để xóa phép toán đang thực hiện và thực hiện phép toán mới nếu muốn.
-    
+  * Cách sử dụng Cmd 
+    - Cách 1: Chỉ chạy được trên cmd ở thư mục hiện hành
+            B1: Mở cmd ngay trên thư mục hiện hành khi tải về đó là sum
+            B2: gõ lệnh sum s1 s2
+               + s1 là chuổi thứ nhất
+               + s2 là chuổi thứ 2
+            B3:Nhấn vào nút compute để thực hiện phép toán. Kết quả và các bước thực hiện sẽ được in ra màn hình phía bên dưới
+            B4:Nhấn vào nút Reset để xóa phép toán đang thực hiện và thực hiện phép toán mới nếu muốn.
+     - Cách 2: Chạy trên cmd ở mọi thư mục trên máy tính
+            B1: Sửa dòng lệnh trong file sum.cmd thành: java -jar "direct\Add2Num.jar"
+               +trong đó direct là đường dẫn đến thư mục chưa file sum.cmd và file Add2Num.jar
+            B2: Tạo biến môi trường bằng cách
+               + click phải vào biểu tượng My computer và chọn Properties => Advanced System Setting =>  Environment Variables
+               + Chọn vào mục Path click Edit
+               + Chọn New sau đó coppy đường dẫn đên file sum.cmd dán vào
+               + click chọn Ok 3 lần
+            B3: Mở cmd ở mọi nơi và tận hưởng: 
+               + gõ lệnh sum s1 s2
+               + s1 là chuổi thứ nhất
+               + s2 là chuổi thứ 2
+            B4:Nhấn vào nút compute để thực hiện phép toán. Kết quả và các bước thực hiện sẽ được in ra màn hình phía bên dưới
+            B5:Nhấn vào nút Reset để xóa phép toán đang thực hiện và thực hiện phép toán mới nếu muốn.
+=============================================
+3. Xem các testcase tại : TestCase.PNG
+=====================================
+4. chạy Test case bằng cách chạy file MyBigNumberTest.java
+=====================================
+5.Các lỗi thường gặp phải khi sử dụng phần mềm và phải tránh các trường hợp sau đây:
+  - 2 chuỗi số nhập vào KHÔNG ĐƯỢC chứa chữ.
+     Ví dụ: s1 = 12A và s2 = G123 || hay s1 = 323 và s2 = 5sad || hay s1 = asad3 và s2 = 123
+  - 2 chuỗi số nhập vào KHÔNG ĐƯỢC chứa số âm.
+     Ví dụ: s1 = -232 và s2 = 3123 || hay s1 = 12 và s2 =-2342 || hay s1 = -2132232 và s2 = -56456
+  - 2 chuỗi nhập vào KHÔNG ĐƯỢC chứa kí tự đặc biệt.
+      ví dụ: s1 = %23s4 và s2 = 422^$% || hay s1 = 324 và s2 = 34$ || hay s1 = $#$2 và  s2 = 13123 
+      
+      ========================
+      
