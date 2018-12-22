@@ -25,8 +25,8 @@ Hướng dẫn :
             B2: Tạo biến môi trường bằng cách
                + click phải vào biểu tượng My computer và chọn Properties => Advanced System Setting =>  Environment Variables
                + Chọn vào mục Path click Edit
-               + Chọn New sau đó coppy đường dẫn đên file sum.cmd dán vào
-               + click chọn Ok 3 lần
+               + Chọn New sau đó coppy đường dẫn đên file sum.cmd dán vào đó và lick OK
+               + click chọn Ok 2 lần
             B3: Mở cmd ở mọi nơi và tận hưởng: 
                + gõ lệnh sum s1 s2
                + s1 là chuổi thứ nhất
