@@ -7,8 +7,7 @@ package addtwonum;
  */
 
 /**
- *
- * @author Hy's  PC
+ *author Hy's  PC.
  */
 public interface IReceiver {
     public abstract void send(String msg);
