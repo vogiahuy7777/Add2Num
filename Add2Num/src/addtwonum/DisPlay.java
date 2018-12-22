@@ -199,7 +199,11 @@ public class DisPlay extends javax.swing.JFrame implements IReceiver {
         String str1 = input1.getText();//lấy dữ liệu từ textField
         String str2 = input2.getText();//lấy dữ liệu từ textField
         MyBigNumber myBigNumber = new MyBigNumber(this);
-        resultArea.setText(myBigNumber.sum(str1, str2));
+         try {
+            resultArea.setText(myBigNumber.sum(str1, str2));
+        }catch (NumberFormatException e) {
+            System.out.println(e);
+        }
     }//GEN-LAST:event_computeActionPerformed
 
     private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
