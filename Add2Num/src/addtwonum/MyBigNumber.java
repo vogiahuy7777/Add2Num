@@ -85,9 +85,14 @@ public class MyBigNumber {
         int max =  (leng1 > leng2) ? leng1 : leng2; // lưu giá trị length của chuổi dài nhất
         int i = 0; //biến đếm cho vòng lặp
         for (i = 1; i <= max; i++) { // chạy vòng lặp để tham chiếu đến từng kí tự của chuổi
-            char1 = ((leng1 - i) >= 0) ? num1.charAt(leng1 - i) : '0'; // nếu chuổi 1 hết ta sẽ ghi 0
-            char2 = ((leng2 - i) >= 0) ? num2.charAt(leng2 - i) : '0'; //nếu chuổi 2 hết ta sẽ ghi 0
-
+            
+            // nếu chuổi 1 hết ta sẽ ghi 0 ngược lại lấy kí tự cuối
+            char1 = ((leng1 - i) >= 0) ? num1.charAt(leng1 - i) : '0';
+            
+            //nếu chuổi 2 hết ta sẽ ghi 0 ngược lại lấy kí tự cuối
+            char2 = ((leng2 - i) >= 0) ? num2.charAt(leng2 - i) : '0';
+            
+            // cộng kí tự cuối của chuổi và phần nhớ(nếu có) vào với nhau
             numSum = (char1 - '0') + (char2 - '0') + remember;
             sum = Integer.toString(numSum % 10) + sum; //ghi kết quả cộng vào biến kết quả
 
