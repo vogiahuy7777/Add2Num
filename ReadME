@@ -36,7 +36,9 @@ Hướng dẫn :
 =============================================
 3. Xem các testcase tại : TestCase.PNG
 =====================================
-4. chạy Test case bằng cách chạy file MyBigNumberTest.java
+4. chạy Test case bằng cách chạy file MyBigNumberTest.java bằng câu lệnh:
+    + javac MyBigNumberTest.java
+    + java MyBigNumberTest
 =====================================
 5.Các lỗi thường gặp phải khi sử dụng phần mềm và phải tránh các trường hợp sau đây:
   - 2 chuỗi số nhập vào KHÔNG ĐƯỢC chứa chữ.
