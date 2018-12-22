@@ -26,7 +26,7 @@ public class MyBigNumberTest implements IReceiver {
     @Test
     public void testSum1() {
         try {
-            System.out.println("sum :");
+            System.out.printf("sum :");
             String str1 = "10";
             String str2 = "10";
             String expResult = "20";
@@ -35,14 +35,14 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.println(e);
+            System.out.printf(e);
         }
     }
 
     @Test
     public void testSum2() {
         try {
-            System.out.println("sum :");
+            System.out.printf("sum :");
             String str1 = "99";
             String str2 = "99";
             String expResult = "198";
@@ -51,14 +51,14 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.println(e);
+            System.out.printf(e);
         }
     }
 
     @Test
     public void testSum3() {
         try {
-            System.out.println("sum :");
+            System.out.printf("sum :");
             String str1 = "999";
             String str2 = "99";
             String expResult = "1098";
@@ -67,14 +67,14 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.println(e);
+            System.out.printf(e);
         }
     }
 
     @Test
     public void testSum4() {
         try {
-            System.out.println("sum :");
+            System.out.printf("sum :");
             String str1 = "99";
             String str2 = "999";
             String expResult = "1098";
@@ -83,14 +83,14 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.println(e);
+            System.out.printf(e);
         }
     }
 
     @Test
     public void testSum5() {
         try {
-            System.out.println("sum :");
+            System.out.printf("sum :");
             String str1 = "21";
             String str2 = "10)";
             String expResult = "31";
@@ -99,7 +99,7 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.println(e);
+            System.out.printf(e);
         }
     }
 
