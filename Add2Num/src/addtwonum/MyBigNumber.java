@@ -25,9 +25,6 @@ public class MyBigNumber {
      */
     public String sum(final String str1, final String str2) {
         int pos;
-        int leng1 = str1.length();
-        int leng2 = str2.length();
-        int max =  (leng1 > leng2) ? leng1 : leng2; // lưu giá trị length của chuổi dài nhất
         String num1 = str1;
         String num2 = str2;
         String step = "";
@@ -83,6 +80,9 @@ public class MyBigNumber {
             throw new NumberException(pos);
 
         }
+        int leng1 = str1.length();
+        int leng2 = str2.length();
+        int max =  (leng1 > leng2) ? leng1 : leng2; // lưu giá trị length của chuổi dài nhất
         int i = 0; //biến đếm cho vòng lặp
         for (i = 1; i <= max; i++) { // chạy vòng lặp để tham chiếu đến từng kí tự của chuổi
             char1 = ((leng1 - i) >= 0) ? num1.charAt(leng1 - i) : '0'; // nếu chuổi 1 hết ta sẽ ghi 0
