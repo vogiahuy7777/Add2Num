@@ -13,7 +13,7 @@ import addtwonum.MyBigNumber;
 
 /**
  *
- * @author Hy's PC
+ * author Hy's PC.
  */
 public class MyBigNumberTest implements IReceiver {
 
