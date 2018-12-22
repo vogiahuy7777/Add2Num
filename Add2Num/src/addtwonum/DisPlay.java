@@ -8,8 +8,7 @@ import javax.swing.JOptionPane;
  * and open the template in the editor.
  */
 /**
- *
- * @author Hy's PC
+ * author Hy's PC.
  */
 public class DisPlay extends javax.swing.JFrame implements IReceiver {
 
