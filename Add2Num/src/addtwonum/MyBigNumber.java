@@ -32,7 +32,6 @@ public class MyBigNumber {
         String num2 = str2;
         String step = "";
         String process = "";
-        String s = "";// tạo ra biến có kí tự rổng;
         String sum = "";//tao ra biến lưu kết quả
         Pattern pattern = Pattern.compile("\\D"); // Chuỗi đại diện cho kí tự số từ [0-9]
         final Matcher isError1 = pattern.matcher(num1);// biến để lưu dữ kết quả xét chuỗi s1 
@@ -45,13 +44,13 @@ public class MyBigNumber {
 
         // bắt lỗi dữ liệu nhập vào nếu có
         //kiểm tra người dùng có nhập đủ input ch
-        if (num1.equals(s)) {
+        if (num1.isEmpty()) {
             pos = 1;
             this.ireceiver.send("Vui lòng nhập số thứ nhất: ");
             throw new NumberException(pos);
         }
 
-        if (num2.equals(s)) {
+        if (num2.isEmpty()) {
             pos = 1;
             this.ireceiver.send("Vui lòng nhập số thứ 2: ");
             throw new NumberException(pos);
