@@ -3,18 +3,34 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package addtwonum;
+package testcase;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-import addtwonum.NumberException;
-import addtwonum.IReceiver;
-import addtwonum.MyBigNumber;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 /**
  *
- * author Hy's PC.
+ * @author Gia Huy
  */
+import mybignumber.Exception;
+import mybignumber.IReceiver;
+import mybignumber.MyBigNumber;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import mybignumber.Exception;
+import mybignumber.IReceiver;
+import mybignumber.MyBigNumber;
+
 public class MyBigNumberTest implements IReceiver {
 
     public MyBigNumberTest() {
@@ -35,7 +51,7 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.printf(e);
+            System.out.println(e);
         }
     }
 
@@ -51,7 +67,7 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.printf(e);
+            System.out.println(e);
         }
     }
 
@@ -67,7 +83,7 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.printf(e);
+            System.out.println(e);
         }
     }
 
@@ -83,7 +99,7 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.printf(e);
+            System.out.println(e);
         }
     }
 
@@ -99,7 +115,7 @@ public class MyBigNumberTest implements IReceiver {
             String result = mybignumber.sum(str1, str2);
             assertEquals(expResult, result);
         } catch (NumberFormatException e) {
-            System.out.printf(e);
+            System.out.println(e);
         }
     }
 
