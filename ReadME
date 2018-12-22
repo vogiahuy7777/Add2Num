@@ -3,11 +3,12 @@ BUILD OUTPUT DESCRIPTION
 ========================
 
 Hướng dẫn : 
-1. Nếu chạy Unit Test sử dụng IDE NetBeans và chạy file MyBigNumberTest hoặc chạy Test Project
-2. Tải phần mềm tại link : https://drive.google.com/open?id=1Y4VH_35bvd40BN8d7PMsmxWobKcQmSGT
-3. Xem hướng dẫn tại file :Hướng dẫn sử dụng phần mềm và các Testcase của phần mềm.xlsx
-4. Xem các testcase tại : hoàn thành yêu cầu.xlsx và TestCase.JPG
-
-========================
-CONFIRM MY FRIEND
-========================
+1. Tải phần mềm tại link : https://drive.google.com/open?id=1kY1zUF1M8q1MBW93tCKEwFOn7-ZXz7RL
+ ========================
+2. 
+  * Cách sử dụng 1 chạy file Add2Number.jar:
+    B1:Nhâp số thứ nhất vào ô bên cạnh chữ "Fist Number".
+    B2:Nhâp số thứ hai vào ô bên cạnh chữ "Second Number"
+    B3:Nhấn vào nút com[ute để thực hiện phép toán. Kết quả và các bước thực hiện sẽ được in ra màn hình phía bên dưới
+    B4:Nhấn vào nút Reset để xóa phép toán đang thực hiện và thực hiện phép toán mới nếu muốn.
+    
